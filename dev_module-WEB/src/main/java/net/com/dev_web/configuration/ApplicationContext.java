@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
@@ -20,6 +21,7 @@ import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = { "net.com.dev_web.controller" })
+@Import(value = org.dev_module.configuration.ApplicationContext.class)
 public class ApplicationContext extends WebMvcConfigurerAdapter {
 
 	private static final String DEFINICAO_TILES_PADRAO_GLOBAL = "/WEB-INF/web-tiles.xml";
