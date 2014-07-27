@@ -50,6 +50,13 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
+		<!-- END -->
+
+		<dependency>
+			<groupId>com.jolbox</groupId>
+			<artifactId>bonecp-spring</artifactId>
+			<version>0.8.0.RELEASE</version>
+		</dependency>
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -90,7 +97,7 @@
 		</dependency>
 		<!-- END -->
 
-		
+
 
 		<dependency>
 			<groupId>junit</groupId>
